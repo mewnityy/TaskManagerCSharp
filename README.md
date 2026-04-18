@@ -2,36 +2,6 @@
 
 A lightweight commandline task manager built in C#. Add tasks, set priorities and difficulty, track completion - all from the terminal. Data is saved automatically between sessions.
 
----
-
-## Commands
-
-<table width="100%">
-  <thead>
-    <tr>
-      <th width="12%">Command</th>
-      <th width="38%">Usage</th>
-      <th width="50%">Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td><code>add</code></td><td><code>add [title] [priority]</code></td><td>Add a new task. Title and priority can be passed inline or entered interactively.</td></tr>
-    <tr><td><code>list</code></td><td><code>list [all / done / todo / low / normal / high]</code></td><td>Show tasks. Filter by status or priority. Defaults to <code>all</code>.</td></tr>
-    <tr><td><code>done</code></td><td><code>done &lt;id&gt;</code></td><td>Mark a task as completed.</td></tr>
-    <tr><td><code>undone</code></td><td><code>undone &lt;id&gt;</code></td><td>Mark a completed task back as not done.</td></tr>
-    <tr><td><code>del</code></td><td><code>del &lt;id&gt;</code></td><td>Permanently delete a task by its ID.</td></tr>
-    <tr><td><code>edit</code></td><td><code>edit &lt;id&gt; &lt;new title&gt;</code></td><td>Rename a task. Use quotes for titles with spaces.</td></tr>
-    <tr><td><code>priority</code></td><td><code>priority &lt;id&gt; &lt;low / normal / high&gt;</code></td><td>Change the priority level of an existing task.</td></tr>
-    <tr><td><code>search</code></td><td><code>search &lt;text&gt;</code></td><td>Find tasks whose title contains the given keyword (case-insensitive).</td></tr>
-    <tr><td><code>clear</code></td><td><code>clear</code></td><td>Remove all completd tasks in one operation.</td></tr>
-    <tr><td><code>history</code></td><td><code>history</code></td><td>Show all commands entered during the current session.</td></tr>
-    <tr><td><code>help</code></td><td><code>help [command]</code></td><td>Show the command list, or detailed help for a specific command.</td></tr>
-    <tr><td><code>exit</code></td><td><code>exit</code></td><td>Quit the program.</td></tr>
-  </tbody>
-</table>
-
----
-
 ## Data Storage
 
 Tasks are saved automatically to `tasks.json` after every change and loaded on startup.
